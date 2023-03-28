@@ -2,7 +2,7 @@ package inversions
 
 import "fmt"
 
-func Number_of_inversions(array []int) {
+func Number_of_inversions_brute(array []int) {
 	var number_of_inversions [][]int
 	k := 0
 	for i := 0; i < len(array); i++ {

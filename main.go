@@ -9,7 +9,7 @@ import (
 
 func main() {
 	array := []int{2, 3, 7, 8, 9, 1}
-	inversions.Number_of_inversions(array)
+	inversions.Number_of_inversions_brute(array)
 }
 
 func call_merge_sort() {
