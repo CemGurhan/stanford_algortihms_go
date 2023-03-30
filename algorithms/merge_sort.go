@@ -1,5 +1,7 @@
 package algorithms
 
+import "fmt"
+
 func Merge_sort(array []int) []int {
 	array_length := len(array)
 	halfway_index := len(array) / 2
@@ -31,6 +33,7 @@ func merge(left_array []int, right_array []int) []int {
 			k++
 		} else if right_array[j] < left_array[i] {
 			final_array[k] = right_array[j]
+			fmt.Println("Inversion found: [", left_array[i:], ", ", right_array[j], "]")
 			j++
 			k++
 		}
@@ -47,8 +50,13 @@ func merge(left_array []int, right_array []int) []int {
 	return final_array
 }
 
-// [22, 33, 4, 5, 6]
-// [22, 33]
-// [22] [33]
-// [22, 33]
-// [4, 5, 6, 22, 33]
+// [22, 4, -1, 3, 55]
+// [4, 22] [-1, 3, 55]
+
+// [3, 5, 7, 8, 2, 1]
+// [3, 5, 7] [8, 2, 1]
+// [3] [5, 7] [8] [2, 1]
+// [3] [5] [7] [8] [2] [1]
+// [3] [5, 7] [8] [1, 2]
+// [3, 5, 7] [1, 2, 8] if B[j] < A[i] then we can assume the rest of A is greater than B[j] as B and A are sorted
+// sorted array

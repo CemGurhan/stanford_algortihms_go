@@ -8,6 +8,16 @@ import (
 )
 
 func main() {
+	call_number_of_inversions_efficient()
+}
+
+func call_number_of_inversions_efficient() {
+	array := []int{3, 5, 7, 8, 2, 1}
+	a := inversions.Merge_sort(array)
+	fmt.Println(a)
+}
+
+func call_number_of_inversions_brute() {
 	array := []int{2, 3, 7, 8, 9, 1}
 	inversions.Number_of_inversions_brute(array)
 }
