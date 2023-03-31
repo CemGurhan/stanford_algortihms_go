@@ -13,8 +13,8 @@ func main() {
 
 func call_number_of_inversions_efficient() {
 	array := []int{3, 5, 7, 8, 2, 1}
-	a := inversions.Merge_sort(array)
-	fmt.Println(a)
+	_, inversions := inversions.FindNumberOfInversions(array)
+	fmt.Println(inversions)
 }
 
 func call_number_of_inversions_brute() {
