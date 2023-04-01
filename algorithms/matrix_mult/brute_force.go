@@ -5,7 +5,7 @@ func Multiply_n_by_n_matrices(matrix_one [][]int, matrix_two [][]int) [][]int {
 	for i := 0; i < len(matrix_one); i++ {
 		output_matrix[i] = make([]int, len(matrix_two[0])) // initialize slice rows
 		for j := 0; j < len(matrix_one[i]); j++ {
-			for k := 0; k < len(matrix_two); k++ {
+			for k := 0; k < len(matrix_two); k++ { // use to iterate through rows on matrix_one and columns on matrix_two
 				output_matrix[i][j] = output_matrix[i][j] + (matrix_one[i][k] * matrix_two[k][j])
 			}
 		}
