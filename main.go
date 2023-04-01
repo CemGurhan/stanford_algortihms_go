@@ -5,10 +5,14 @@ import (
 
 	"github.com/cemgurhan/algorithms/algorithms"
 	"github.com/cemgurhan/algorithms/algorithms/inversions"
+	matrixmult "github.com/cemgurhan/algorithms/algorithms/matrix_mult"
 )
 
 func main() {
-	call_number_of_inversions_efficient()
+	matrix_one := [][]int{{2, 3}, {4, 5}}
+	matrix_two := [][]int{{6, 7}, {8, 9}}
+	output_matrix := matrixmult.Multiply_n_by_n_matrices(matrix_one, matrix_two)
+	fmt.Println(output_matrix)
 }
 
 func call_number_of_inversions_efficient() {
