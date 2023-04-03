@@ -11,7 +11,14 @@ import (
 func main() {
 	matrix_one := [][]int{{2, 3}, {4, 5}}
 	matrix_two := [][]int{{6, 7}, {8, 9}}
-	output_matrix := matrixmult.Multiply_n_by_n_matrices(matrix_one, matrix_two)
+	matrixmult.Strassens_algorithm(matrix_one, matrix_two)
+	// fmt.Println(output_matrix)
+}
+
+func call_Multiply_n_by_n_matrices_brute() {
+	matrix_one := [][]int{{2, 3}, {4, 5}}
+	matrix_two := [][]int{{6, 7}, {8, 9}}
+	output_matrix := matrixmult.Multiply_n_by_n_matrices_brute(matrix_one, matrix_two)
 	fmt.Println(output_matrix)
 }
 

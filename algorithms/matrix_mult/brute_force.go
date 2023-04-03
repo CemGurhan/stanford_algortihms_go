@@ -1,6 +1,6 @@
 package matrixmult
 
-func Multiply_n_by_n_matrices(matrix_one [][]int, matrix_two [][]int) [][]int {
+func Multiply_n_by_n_matrices_brute(matrix_one [][]int, matrix_two [][]int) [][]int {
 	output_matrix := make([][]int, len(matrix_one))
 	for i := 0; i < len(matrix_one); i++ {
 		output_matrix[i] = make([]int, len(matrix_two[0])) // initialize slice rows
