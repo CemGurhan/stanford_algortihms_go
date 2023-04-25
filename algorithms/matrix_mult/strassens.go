@@ -55,14 +55,3 @@ func product_six(matrix_map_one map[int]int, matrix_map_two map[int]int) int {
 func product_seven(matrix_map_one map[int]int, matrix_map_two map[int]int) int {
 	return (matrix_map_one[1] - matrix_map_one[3]) * (matrix_map_two[1] + matrix_map_two[2])
 }
-
-// [[2, 3], [[6, 7],
-// [4, 5]]  [8, 9]]
-
-// [[2, 3]] [[6, 7]]
-// [[4, 5]] [[8, 9]]
-
-// [[2]] [[3]] [[6]] [[7]]
-// [[4]] [[5]] [[8]] [[9]]
-
-// (A[0][0] * B[0][0]) + (A[0][1] * B[1][0])
